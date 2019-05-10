@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Shift Management App</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="calendar">Calendar</string>
+    <string name="salary">Salary</string>
+    <string name="logout">Logout</string>
+    <string name="textview">TextView</string>
+    <string name="back">Back</string>
+    <string name="config">config</string>
+    <string name="accounts">Accounts</string>
+    <string name="add_account">Add Account</string>
+    <string name="display_chosen_date_here">Display chosen date here</string>
+    <string name="start_time">Start Time :</string>
+    <string name="_00_00">00:00</string>
+    <string name="end_time">End Time :</string>
+    <string name="employees_registered">Employees Registered -</string>
+    <string name="actual_capped">Actual / Capped</string>
+    <string name="plus">Plus</string>
+    <string name="starttime">starttime</string>
+    <string name="dash">-</string>
+    <string name="endtime">endtime</string>
+    <string name="shiftname">shiftname</string>
+    <string name="todo">TODO</string>
+    <string name="add_new_shift">Add New Shift</string>
+    <string name="display_new_shift_for_date_here" />
+    <string name="display_new_shift_for_chosen_date_here">Display New Shift for chosen Date here</string>
+    <string name="start_time_txt">Start Time:</string>
+    <string name="shift_name_txt">Shift Name:</string>
+    <string name="number_of_employees_txt">Number of Employees:</string>
+    <string name="end_time_txt">End Time:</string>
+    <string name="wage_txt">Wage:</string>
+    <string name="insert_new_shift">Add</string>
+</resources>

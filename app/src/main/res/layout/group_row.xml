@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="0dip"
+    android:layout_gravity="top">
+
+    <TableRow>
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/shiftname"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+           ></TextView>
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+           ></TextView>
+
+        <TextView
+            android:id="@+id/cap"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/registeredEmployees"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/totalEmployees"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"></TextView>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:background="@drawable/add"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo"
+            android:background="@drawable/garbage"/>
+
+    </TableRow>
+</TableLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DateActivity">
+
+
+    <include
+        android:id="@+id/btnBack"
+        layout="@layout/inner_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+    </include>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/btnBack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="6dp"
+        android:gravity="center"
+        android:text="@string/display_chosen_date_here"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAddShift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
+        android:text="@string/add_new_shift"></Button>
+
+    <ExpandableListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:layout_below="@id/btnAddShift"
+        android:layout_alignParentStart="true">
+    </ExpandableListView>
+
+
+</RelativeLayout>
