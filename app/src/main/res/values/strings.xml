@@ -31,5 +31,6 @@
     <string name="number_of_employees_txt">Number of Employees:</string>
     <string name="end_time_txt">End Time:</string>
     <string name="wage_txt">Wage:</string>
-    <string name="insert_new_shift">Add</string>
+    <string name="createAccount">Create Account</string>
+    <string name="accountName">Account Name</string>
 </resources>

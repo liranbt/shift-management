@@ -21,6 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
+    <!--remove text before prod-->
+
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="0dp"
@@ -33,6 +35,7 @@
         android:gravity="center"
         android:ems="10"
         android:hint="@string/email"
+        android:text="admin@gmail.com"
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +43,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="o" />
 
+    <!--remove default password before prod-->
     <EditText
         android:id="@+id/txtPassword"
         android:layout_width="0dp"
@@ -52,6 +56,7 @@
         android:layout_marginEnd="24dp"
         android:ems="10"
         android:hint="@string/password"
+        android:text='12345'
         android:importantForAutofill="no"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"

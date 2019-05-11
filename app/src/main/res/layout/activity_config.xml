@@ -6,21 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ConfigActivity">
 
-    <include
-        android:id="@+id/btnBack"
-        layout="@layout/inner_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        >
-
-    </include>
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="23dp"
-        android:layout_below="@id/btnBack"
         android:background="@color/colorPrimary"
         android:text="@string/accounts"
         android:textColor="@color/colorAccent"
@@ -36,4 +25,9 @@
         android:text="@string/add_account"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="84dp" />
+
+    
+
 </RelativeLayout>
+
+
