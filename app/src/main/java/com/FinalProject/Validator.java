@@ -62,6 +62,47 @@ public class Validator {
         });
     }
 
+    // Validate New User input against Firebase
+    public static void validateNewUser(final EditText mail, final Callback callback)
+    {
+        String inputMail = mail.getText().toString();
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        DatabaseReference accountsRef = db.getReference("accounts");
+        accountsRef.addValueEventListener(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren())
+                {
+                    // Retrieve Account from Database
+                    Account account = snapshot.getValue(Account.class);
+                    //   account.setImage("");
+
+                    // Email in database
+                    if (inputMail.equals(account.getEmail()))
+                    {
+                        if(account.getIsActive())
+                        {
+                            callback.onAddAcountCallback(true, account.getId() );
+                        }
+                        else
+                        {
+                            callback.onAddAcountCallback(true, account.getId());
+                        }
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError)
+            {
+                throw databaseError.toException();
+            }
+        });
+    }
+
     // Retrieve shifts per date from Firebase
     // Date passed to this function is of form - YYYYMMDD
     public static void fetchShiftsPerDayFromDB(String date, final Callback callback)

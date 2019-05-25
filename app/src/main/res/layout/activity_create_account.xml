@@ -14,7 +14,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/createAccount"
         android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/createAcountButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
         tools:targetApi="o" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createAcountButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="308dp"
